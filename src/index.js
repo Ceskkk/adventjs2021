@@ -1,5 +1,6 @@
 import contarOvejas from './challenge01/index.js'
 import listGifts from './challenge02/index.js'
+import isValid from './challenge03/index.js'
 
 // Challenge01
 const ovejas = [
@@ -10,10 +11,12 @@ const ovejas = [
   { name: 'AAAAAaaaaa', color: 'rojo' },
   { name: 'Nnnnnnnn', color: 'rojo' }
 ]
-
 console.log('Challenge01:', contarOvejas(ovejas))
 
 // Challenge02
 const carta = 'bici coche balón _playstation bici coche peluche'
-
 console.log('Challenge02: ', listGifts(carta))
+
+// Challenge03
+const letter = 'bici coche (balón) bici coche peluche'
+console.log('Challenge03: ', isValid(letter))
